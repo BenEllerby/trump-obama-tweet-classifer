@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="bundle.js"
+    >
+    </script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <main role="main">
+      <div class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal text-center">Obama Trump <br/> Tweet Classifier</h1>
+        <p>Demo of the Naive Bayes Classifier built during the blog article <a href="https://blog.theodo.fr/2017/11/building-trumpobama-tweet-classifier-98-accuracy-1-hour/">
+'Building a Trump/Obama Tweet Classifier with 98% accuracy in 1 hour!'</a></p>
+        <p>Enter a tweet and see if you're predicted as Trump or Obama</p>
+        <label for="tweet" class="sr-only">Tweet</label>
+        <textarea class="form-control" id="tweet" equired autofocus></textarea>
+        <button id="submit_button" class="btn btn-lg btn-primary btn-block">Classify</button>
+        <p class="mt-5 mb-3 text-muted">⚠️ This is based on data from the Twitter profiles @BarackObama and @realDonaldTrump. This is not support or endorsement of any of the views or words used.</p>
+        <div class="president trump">
+          <h2>@realDonaldTrump</h2>          
+          <img class="rounded-circle tweet_icon" src="https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg" alt="Donald J. Trump">
+          <p><a class="btn btn-secondary" href="https://twitter.com/realDonaldTrump" role="button">View profile &raquo;</a></p>
+        </div>
+        <div class="president obama">
+          <img class="rounded-circle tweet_icon" src="https://pbs.twimg.com/profile_images/822547732376207360/5g0FC8XX_400x400.jpg" alt="Barack Obama">
+          <h2>@BarackObama</h2>
+          <p><a class="btn btn-secondary" href="https://twitter.com/BarackObama" role="button">View profile &raquo;</a></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
